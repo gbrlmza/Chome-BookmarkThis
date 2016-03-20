@@ -1,0 +1,24 @@
+{
+	"name": "Bookmark this!",
+	"version": "0.3.2",
+	"manifest_version": 2,
+
+	"description": "Save the current Tab in 'Other Bookmarks' folder without asking a single thing",
+	
+	"icons": {
+		"128": "icon128.png",
+		"16": "icon16.png",
+		"48": "icon48.png"
+	},
+
+	"browser_action": {
+      "default_icon": "icon19.png",
+      "default_title": "Bookmark this!"
+   },
+	
+	"background": {
+		"scripts": ["background.js"]
+	},
+	
+	"permissions": [ "bookmarks", "tabs", "alarms" ]
+}
