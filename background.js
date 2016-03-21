@@ -145,7 +145,7 @@ chrome.alarms.onAlarm.addListener(function(alarm){
 		for (i=0, imax=folder.children.length; i < imax; i++) {
 			// if link(not folder) and older than 7 days delete bookmark
 			if ( folder.children[i].url && (Date.now() - folder.children[i].dateAdded) > (60*60*24*7*1000) ) {
-				chrome.bookmarks.remove(c.id, function () {});
+				chrome.bookmarks.remove(folder.children[i].id, function () {});
 			}
 		}
 	});
