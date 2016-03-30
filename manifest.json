@@ -1,6 +1,6 @@
 {
 	"name": "Bookmark this!",
-	"version": "0.3.2",
+	"version": "0.3.3",
 	"manifest_version": 2,
 
 	"description": "Save the current Tab in 'Other Bookmarks' folder without asking a single thing",

@@ -125,7 +125,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 		// {Year}/{Month Name}/{Day Group}
 		path += now.getFullYear() + "/";
 		path += monthNames[now.getMonth()] + "/";
-		path += "Day " + (day <= 10 ? "1-10" : day <= 20 ? "11-20" : "21-" + new Date(now.getFullYear(),now.getMonth(),0).getDate());
+		path += "Day " + (day <= 10 ? "1-10" : day <= 20 ? "11-20" : "21-" + new Date(now.getFullYear(),now.getMonth()+1,0).getDate());
 
 		return path;
 	};
